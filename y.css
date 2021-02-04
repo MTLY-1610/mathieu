@@ -1,0 +1,25 @@
+body {
+  background-color: cornflowerblue;
+  color: peachpuff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  height: 200px;
+  transform: rotate(-90deg);
+}
+
+nav > span {
+  display: flex;
+  color: peachpuff;
+  font-size: 1vw;
+  font-family: sans-serif;
+  letter-spacing: 5px;
+}
+
+/*# sourceMappingURL=y.css.map */

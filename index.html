@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="y.css" />
+    <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
+    <title>Mathieu</title>
+  </head>
+  <body>
+    <nav>
+      <span>MATHIEU</span>
+      <span>instagram</span>
+      <span>github</span>
+      <span>tel</span>
+    </nav>
+    <div id="text"></div>
+    <script>
+      let Size = 0.001;
+
+      function increaseSize() {
+        var elem = document.getElementById("text");
+        var text = new Blotter.Text("COMING SOON", {
+          display: "flex",
+          family: "Arial",
+          weight: 900,
+          size: 100,
+          fill: "black",
+        });
+
+        var material = new Blotter.RollingDistortMaterial();
+
+        material.uniforms.uSineDistortAmplitude.value = 0.0006;
+
+        var blotter = new Blotter(material, {
+          texts: text,
+        });
+
+        var scope = blotter.forText(text);
+
+        scope.appendTo(elem);
+
+        Size += 0.001;
+      }
+
+      increaseSize();
+    </script>
+  </body>
+</html>
