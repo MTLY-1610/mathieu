@@ -4,18 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="y.css" />
+    <script
+      src="https://kit.fontawesome.com/b4a5955279.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Blotter/0.1.0/materials/rollingDistortMaterial.min.js"></script>
     <title>Mathieu</title>
   </head>
   <body>
-    <nav>
-      <span>MATHIEU</span>
-      <span>instagram</span>
-      <span>github</span>
-      <span>tel</span>
-    </nav>
-    <div id="text"></div>
+    <div class="container">
+      <div class="left-container">
+        <nav>
+          <p>MATHIEU LARROUY - FRONT END DEVELLOPER</p>
+
+          <i id="nav-i" class="fab fa-github-alt"></i>
+          <i id="nav-i" class="fab fa-linkedin-in"></i>
+          <i id="nav-i" class="fas fa-paper-plane"></i>
+        </nav>
+      </div>
+      <div class="center-container">
+        <div id="text"></div>
+      </div>
+    </div>
     <script>
       let Size = 0.001;
 
@@ -25,7 +36,7 @@
           display: "flex",
           family: "Arial",
           weight: 900,
-          size: 100,
+          size: 150,
           fill: "black",
         });
 
